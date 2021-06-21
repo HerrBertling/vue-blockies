@@ -1,6 +1,6 @@
 {
   "name": "vue-blockies",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Vue3 wrapper for ethereum-blockies",
   "keywords": ["Ethereum", "Vue3", "Vue"],
   "license": "MIT",
