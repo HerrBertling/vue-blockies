@@ -1,7 +1,14 @@
 {
   "name": "vue-blockies",
   "version": "0.0.2",
+  "description": "A Vue3 wrapper for ethereum-blockies",
+  "keywords": ["Ethereum", "Vue3", "Vue"],
   "license": "MIT",
+  "homepage": "https://github.com/HerrBertling/vue-blockies",
+  "bugs": {
+    "url": "https://github.com/HerrBertling/vue-blockies/issues"
+  },
+  "author": "Markus Siering",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
