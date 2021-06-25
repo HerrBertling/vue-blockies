@@ -1,13 +1,16 @@
 <template>
   <VueBlockie />
+  <PackageVueBlockie seed="MenaJennyMarkus" />
 </template>
 
 <script>
 import VueBlockie from './components/VueBlockie.vue'
+import PackageVueBlockie from 'vue-blockies'
 
 export default {
   name: "App",
   components: {
+    PackageVueBlockie,
     VueBlockie,
   }
 }

@@ -20,14 +20,14 @@ export default {
      */
     color: {
       type: String,
-      default: "#dfe",
+      default: "#41B883",
     },
     /**
      * Choose a different background color, default: random
      */
     bgcolor: {
       type: String,
-      default: "#aaa",
+      default: "#35495E",
     },
     /**
      * Width/height of the icon in blocks, default: 8

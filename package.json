@@ -1,10 +1,14 @@
 {
   "name": "vue-blockies",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A Vue3 wrapper for ethereum-blockies",
-  "keywords": ["Ethereum", "Vue3", "Vue"],
+  "keywords": [
+    "Ethereum",
+    "Vue3",
+    "Vue"
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/HerrBertling/vue-blockies",
+  "homepage": "https://herrbertling.github.io/vue-blockies/",
   "bugs": {
     "url": "https://github.com/HerrBertling/vue-blockies/issues"
   },
@@ -12,17 +16,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "main": "dist/vue-blockies.umd.js",
   "module": "dist/vue-blockies.es.js",
   "dependencies": {
     "ethereum-blockies": "^0.1.1",
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vue-blockies": "^0.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.3.7"
+    "vite": "^2.3.7",
+    "vitepress": "^0.15.5"
   }
 }

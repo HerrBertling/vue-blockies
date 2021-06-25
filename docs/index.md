@@ -2,6 +2,17 @@
 
 This is a simple Vue3 wrapper component for [ethereum-blockies](https://github.com/ethereum/blockies).
 
+<ClientOnly>
+  <VueBlockie
+    seed="ASimpleVue3WrapperComponentForEthereumBlockies"
+    :size="16"
+    :scale="16"
+    color="#41B883"
+    bgcolor="#35495E"
+    spot-color="#35495E"
+  />
+</ClientOnly>
+
 ## Installation
 
 ```sh
@@ -72,3 +83,16 @@ In the template, just™ use it.
   </div>
 </template>
 ```
+
+The example outputs this blockie:
+
+<ClientOnly>
+  <VueBlockie
+    seed="0x4f5F6D3c7e8aDef6be8e51288F098d440bAc12ec"
+    color="#09e"
+    bgcolor="#f3f"
+    :size="16"
+    :scale="2"
+    spot-color="#666"
+  />
+</ClientOnly>
