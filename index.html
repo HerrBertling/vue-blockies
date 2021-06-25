@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue-blockies | Vue-Blockies</title>
+    <meta name="description" content="A simple Vue3 wrapper component for ethereum-blockies">
+    <link rel="stylesheet" href="/vue-blockies/assets/style.abb680c9.css">
+    <link rel="modulepreload" href="/vue-blockies/assets/Home.cd107f95.js">
+    <link rel="modulepreload" href="/vue-blockies/assets/app.e9f484a3.js">
+    <link rel="modulepreload" href="/vue-blockies/assets/index.md.21026672.lean.js">
+    <link rel="modulepreload" href="/vue-blockies/assets/app.e9f484a3.js">
+    <meta name="twitter:title" content="vue-blockies | Vue-Blockies">
+    <meta property="og:title" content="vue-blockies | Vue-Blockies">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-7161a24b><div class="sidebar-button" data-v-7161a24b><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/vue-blockies/" aria-label="Vue-Blockies, back to home" data-v-7161a24b data-v-4a583abe><!----> Vue-Blockies</a><div class="flex-grow" data-v-7161a24b></div><div class="nav" data-v-7161a24b><!----></div><!--[--><!--]--></header><aside class="sidebar" data-v-6b49cdcd><!----><!--[--><!--]--><ul class="sidebar-links" data-v-6b49cdcd><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="#installation">Installation</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="#usage">Usage</a><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="#props">Props</a><!----></li></ul></li><li class="sidebar-link"><a class="sidebar-link-item" href="#full-example">Full example</a><!----></li><!--]--></ul><!--[--><!--]--></aside><!-- TODO: make this button accessible --><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h1 id="vue-blockies"><a class="header-anchor" href="#vue-blockies" aria-hidden="true">#</a> vue-blockies</h1><p>This is a simple Vue3 wrapper component for <a href="https://github.com/ethereum/blockies" target="_blank" rel="noopener noreferrer">ethereum-blockies</a>.</p><!----><h2 id="installation"><a class="header-anchor" href="#installation" aria-hidden="true">#</a> Installation</h2><div class="language-sh"><pre><code>yarn add vue-blockies
+</code></pre></div><p>or</p><div class="language-sh"><pre><code>npm i vue-blockies
+</code></pre></div><h2 id="usage"><a class="header-anchor" href="#usage" aria-hidden="true">#</a> Usage</h2><p>Import the component, make it known to the component you&#39;re using it in.</p><div class="language-js"><pre><code><span class="token keyword">import</span> VueBlockies <span class="token keyword">from</span> vue<span class="token operator">-</span>blockies
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">&#39;MyAwesomeComponent&#39;</span><span class="token punctuation">,</span>
+
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    VueBlockies<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  …
+<span class="token punctuation">}</span>
+</code></pre></div><p>In the template, just™ use it.</p><div class="language-html"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    …
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>VueBlockies</span> <span class="token punctuation">/&gt;</span></span>
+    …
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="props"><a class="header-anchor" href="#props" aria-hidden="true">#</a> Props</h3><table><thead><tr><th>Prop</th><th>Type</th><th>Default value</th><th>Description</th></tr></thead><tbody><tr><td><code>seed</code></td><td><code>String</code></td><td><code>&quot;randomString&quot;</code></td><td>Seed used to generate icon data</td></tr><tr><td><code>color</code></td><td><code>String</code></td><td><code>&quot;#dfe&quot;</code></td><td>To manually specify the icon color</td></tr><tr><td><code>bgcolor</code></td><td><code>String</code></td><td><code>#aaa</code></td><td>Choose a different background color</td></tr><tr><td><code>size</code></td><td><code>String</code></td><td><code>8</code></td><td>Width/height of the icon in blocks</td></tr><tr><td><code>scale</code></td><td><code>Number</code></td><td><code>4</code></td><td>Width/height of each block in pixels.</td></tr><tr><td><code>spotColor</code></td><td><code>String</code></td><td><code>#000</code></td><td>Each pixel has a 13% chance of being of a third color. Set to -1 to disable it. These &quot;spots&quot; create structures that look like eyes, mouths and noses.</td></tr></tbody></table><h2 id="full-example"><a class="header-anchor" href="#full-example" aria-hidden="true">#</a> Full example</h2><div class="language-html"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    …
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>VueBlockies</span>
+      <span class="token attr-name">seed</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0x4f5F6D3c7e8aDef6be8e51288F098d440bAc12ec<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#09e<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">bgcolor</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#f3f<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:size</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>16<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">:scale</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>2<span class="token punctuation">&quot;</span></span>
+      <span class="token attr-name">spot-color</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#666<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">/&gt;</span></span>
+    …
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>The example outputs this blockie:</p><!----></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-fb8d84c6><div class="edit" data-v-fb8d84c6><div class="edit-link" data-v-fb8d84c6 data-v-1ed99556><!----></div></div><div class="updated" data-v-fb8d84c6><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"21026672\"}")</script>
+    <script type="module" async src="/vue-blockies/assets/app.e9f484a3.js"></script>
+  </body>
+</html>
