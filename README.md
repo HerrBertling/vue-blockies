@@ -19,7 +19,7 @@ npm i vue-blockies
 Import the component, make it known to the component you're using it in.
 
 ```js
-import VueBlockies from vue-blockies
+import VueBlockies from "vue-blockies"
 
 export default {
   name: 'MyAwesomeComponent',
